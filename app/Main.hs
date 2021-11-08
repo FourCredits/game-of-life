@@ -1,6 +1,14 @@
 module Main where
 
-import Lib
+import Graphics.Gloss
+
+import Logic
+import Configuration
+import Rendering
 
 main :: IO ()
-main = someFunc
+main =
+  display
+    (InWindow "Game of Life" windowSize (200, 200))
+    background
+    (drawGrid $ blankGrid gridSize)
