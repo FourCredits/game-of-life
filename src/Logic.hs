@@ -4,12 +4,12 @@ import Data.Array.IArray
 import Types
 
 -- Constructs a blank grid with the given width and height
-blankGrid :: Int -> Int -> Grid
-blankGrid w h = listArray ((0, 0), (w - 1, h - 1)) (repeat Dead)
+blankGrid :: (Int, Int) -> Grid
+blankGrid (w, h) = listArray ((0, 0), (w - 1, h - 1)) (repeat Dead)
 
 -- Constructs a grid where the given cells are all alive, and the rest are dead
-makeGrid :: Int -> Int -> [Index] -> Grid
-makeGrid w h indexes = blankGrid w h // (zip indexes $ repeat Alive)
+makeGrid :: (Int, Int) -> [Index] -> Grid
+makeGrid size indexes = blankGrid size // (zip indexes $ repeat Alive)
 
 -- Count how many alive neighbours the given position has
 countNeighbours :: Grid -> Index -> Int

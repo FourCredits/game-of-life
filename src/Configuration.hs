@@ -9,7 +9,7 @@ cellColor = green
 cellColor :: Color
 
 gridSize :: (Int, Int)
-gridSize = (10, 10)
+gridSize = (40, 40)
 
 windowSize :: (Int, Int)
 windowSize = (400, 400)
