@@ -10,3 +10,11 @@ data Cell
 type Index = (Int, Int)
 
 type Grid = Array Index Cell
+
+data State =
+  State
+    { grid :: Grid
+    , paused :: Bool
+    , time :: Float
+    }
+

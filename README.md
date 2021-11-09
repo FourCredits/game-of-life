@@ -10,11 +10,14 @@ To run:
 
 ```sh
 stack build
-stack exec gol 50 50
+stack exec gol
 ```
 
-This will give you a 50x50 grid. Click on squares to turn them on, then press
-'p' to start the simulation.
+This will give you a grid. Click on squares to turn them on or off, press 'p' to
+pause or unpause the game, and press 'r' to reset.
+
+If you want to change some aspect of the game's behaviour, you can look in
+`src/Configuration.hs` for various parameters you can tweak.
 
 To install to your system:
 

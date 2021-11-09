@@ -1,15 +1,45 @@
-module Logic where
+module Logic
+  ( reset
+  , updateState
+  , initialState
+  , flipCell
+  ) where
 
 import Data.Array.IArray
+
 import Types
+import Configuration
+
+-- Update the state of the game, only if enough time has passed
+updateState :: Float -> State -> State
+updateState elapsed game@(State g p t)
+  | p = game
+  | t < updatePeriod = game { time =  t + elapsed}
+  | otherwise = game { grid = tick g, time = 0 }
+
+-- Create the initial state of the game
+initState :: (Int, Int) -> State
+initState size = State {grid = blankGrid size, paused = True, time = 0}
+
+initialState :: State
+initialState = initState gridSize
+
+-- Reset a game back to its initial state
+reset :: State -> State
+reset _ = initialState
 
 -- Constructs a blank grid with the given width and height
 blankGrid :: (Int, Int) -> Grid
 blankGrid (w, h) = listArray ((0, 0), (w - 1, h - 1)) (repeat Dead)
 
--- Constructs a grid where the given cells are all alive, and the rest are dead
-makeGrid :: (Int, Int) -> [Index] -> Grid
-makeGrid size indexes = blankGrid size // (zip indexes $ repeat Alive)
+-- Changes a given index from Dead to Alive, or Alive to Dead
+flipCell :: Index -> Grid -> Grid
+flipCell pos grid = grid // [(pos, val')]
+  where
+    val' =
+      case grid ! pos of
+        Alive -> Dead
+        Dead -> Alive
 
 -- Count how many alive neighbours the given position has
 countNeighbours :: Grid -> Index -> Int

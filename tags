@@ -1,0 +1,52 @@
+Alive	/home/erik/Projects/game-of-life/src/Types.hs	6;"	d
+Cell	/home/erik/Projects/game-of-life/src/Types.hs	5;"	t
+Dead	/home/erik/Projects/game-of-life/src/Types.hs	7;"	d
+Grid	/home/erik/Projects/game-of-life/src/Types.hs	12;"	t
+Index	/home/erik/Projects/game-of-life/src/Types.hs	10;"	t
+State	/home/erik/Projects/game-of-life/src/Types.hs	14;"	t
+State	/home/erik/Projects/game-of-life/src/Types.hs	15;"	d
+background	/home/erik/Projects/game-of-life/src/Configuration.hs	6;"	v
+bindir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	32;"	v	file:
+blankGrid	/home/erik/Projects/game-of-life/src/Logic.hs	26;"	v
+cast	/home/erik/Projects/game-of-life/src/Rendering.hs	37;"	v
+cast2	/home/erik/Projects/game-of-life/src/Rendering.hs	40;"	v
+catchIO	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	26;"	v	file:
+cellSize	/home/erik/Projects/game-of-life/src/Conversion.hs	11;"	v
+cellSize	/home/erik/Projects/game-of-life/src/Rendering.hs	34;"	v
+clickOnCell	/home/erik/Projects/game-of-life/src/UserInteraction.hs	23;"	v
+countNeighbours	/home/erik/Projects/game-of-life/src/Logic.hs	39;"	v
+datadir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	35;"	v	file:
+drawCell	/home/erik/Projects/game-of-life/src/Rendering.hs	24;"	v
+dynlibdir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	34;"	v	file:
+flipCell	/home/erik/Projects/game-of-life/src/Logic.hs	30;"	v
+gameToScreen	/home/erik/Projects/game-of-life/src/Conversion.hs	22;"	v
+getBinDir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	40;"	v
+getDataDir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	43;"	v
+getDataFileName	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	48;"	v
+getDynLibDir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	42;"	v
+getLibDir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	41;"	v
+getLibexecDir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	44;"	v
+getSysconfDir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	45;"	v
+grid	/home/erik/Projects/game-of-life/src/Types.hs	16;"	v
+gridSize	/home/erik/Projects/game-of-life/src/Configuration.hs	16;"	v
+handleEvent	/home/erik/Projects/game-of-life/src/UserInteraction.hs	12;"	v
+initState	/home/erik/Projects/game-of-life/src/Logic.hs	17;"	v
+libdir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	33;"	v	file:
+libexecdir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	36;"	v	file:
+main	/home/erik/Projects/game-of-life/app/Main.hs	13;"	v
+paused	/home/erik/Projects/game-of-life/src/Types.hs	17;"	v
+pausedColor	/home/erik/Projects/game-of-life/src/Configuration.hs	12;"	v
+render	/home/erik/Projects/game-of-life/src/Rendering.hs	12;"	v
+reset	/home/erik/Projects/game-of-life/src/Logic.hs	21;"	v
+runningColor	/home/erik/Projects/game-of-life/src/Configuration.hs	9;"	v
+screenToGame	/home/erik/Projects/game-of-life/src/Conversion.hs	14;"	v
+someFunc	/home/erik/Projects/game-of-life/src/Lib.hs	6;"	v
+sysconfdir	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	37;"	v	file:
+tick	/home/erik/Projects/game-of-life/src/Logic.hs	56;"	v
+time	/home/erik/Projects/game-of-life/src/Types.hs	18;"	v
+toPoint	/home/erik/Projects/game-of-life/src/Rendering.hs	43;"	v
+updateCell	/home/erik/Projects/game-of-life/src/Logic.hs	50;"	v
+updatePeriod	/home/erik/Projects/game-of-life/src/Configuration.hs	24;"	v
+updateState	/home/erik/Projects/game-of-life/src/Logic.hs	10;"	v
+version	/home/erik/Projects/game-of-life/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_game_of_life.hs	29;"	v
+windowSize	/home/erik/Projects/game-of-life/src/Configuration.hs	20;"	v
