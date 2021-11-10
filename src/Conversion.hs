@@ -4,6 +4,7 @@ module Conversion
   , screenToGame
   ) where
 
+import Data.Function
 import Graphics.Gloss
 import qualified Graphics.Gloss.Data.Point.Arithmetic as P
 
@@ -19,9 +20,7 @@ gameToScreen :: Index -> Point
 gameToScreen pos = (cellSize P.* fromIntegralPair pos) P.- offset
 
 cellSize :: Float
-cellSize =
-  uncurry min $
-  divPair (fromIntegralPair windowSize) (fromIntegralPair gridSize)
+cellSize = uncurry min $ (divPair `on` fromIntegralPair) windowSize gridSize
 
 offset :: (Float, Float)
 offset = 0.5 P.* (fromIntegralPair windowSize P.- (cellSize, cellSize))
